@@ -1,0 +1,169 @@
+@import "../utilities/mixins";
+main {
+    width: 100%;
+}
+.main__div {
+    width: 100%;
+    min-height: 50vh;
+    background-color: map-get($colores,c4);
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.fotoportada1 {
+    width: 100%;
+}
+.Contenedor_cards {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-evenly;
+}
+.col {
+    h2 {
+        text-transform: uppercase;
+        @include estilo-tipograf($font-secundaria,1.5rem,600);
+        color: map-get($colores,c2);
+    }
+}
+.tituloPrincipal {
+    @include estilo-tipograf($font-principal,4rem,900);
+    font-style: oblique;
+    background: map-get($colores,c-mainTitle);
+    -webkit-background-clip: text;
+    background-clip: text ;
+    color:transparent;
+    text-align: center;
+    margin: 3% auto;
+}
+.main__div__p {
+    @include estilo-tipograf($font-secundaria,1.7rem,700);
+    margin-bottom: 3%;
+}
+.btn {
+    background-color: map-get($colores,c3);
+    color: white;
+}
+.listadoCateg {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 2%;
+    margin-bottom: 3%;
+    p {
+        background-color: map-get($colores,c1);
+        color:map-get($colores,c4);
+        @include estilo-tipograf($font-secundaria,1rem,400);
+        border-radius: 10px;
+        height: fit-content;
+        width: 100%;
+        padding-left: 5%;
+        &:hover {
+            background-color: map-get($colores,c4);
+            color: map-get($colores,c1);
+        }
+    }
+}
+.offcanvas-title {
+    text-transform: uppercase;
+    @include estilo-tipograf($font-principal,1.6rem,600);
+}
+.offcanvas-body {
+    background-color: map-get($colores,c4);
+        p {
+            font-style: italic;
+            @include estilo-tipograf($font-secundaria,1.2rem,500);
+        }
+}
+.card-np {
+    width: 18rem;
+    margin: 3%;
+    &:hover {
+        box-shadow: 10px 10px 15px map-get($colores,c3);    
+    }
+    img {
+        height: 30%;
+    }
+}
+.carousel {
+    width: 90%;
+    margin: auto;
+}
+.carousel-item {
+    img {
+        width: 100%;
+    }
+}
+.card-title {
+    text-transform: uppercase;
+    @include estilo-tipograf($font-secundaria,1.1rem,800);
+    color: map-get($colores,c1);
+    text-decoration: underline;
+}
+@keyframes colores {
+    0%{color: rgb(119, 0, 255);}
+    10%{color: rgb(162, 26, 252);
+        transform: scale(1.01);}
+    20%{color: rgb(136, 80, 173);
+        transform: scale(1.02);}
+    30%{color: rgb(129, 89, 155);
+        transform: scale(1.03);}
+    40%{color: rgb(197, 96, 228);
+        transform: scale(1.04);}
+    50%{color: rgb(156, 39, 172);
+        transform: scale(1.05);}
+    60%{color: rgb(168, 20, 156);
+        transform: scale(1.04);}
+    70%{color: rgb(150, 38, 150);
+        transform: scale(1.03);}
+    80%{color: rgb(127, 14, 131);
+        transform: scale(1.02);}
+    90%{color: rgb(167, 29, 137);
+        transform: scale(1.01);}
+    100%{color: rgb(110, 56, 146);
+        transform: scale(1);}
+        
+}
+.cardlink {
+    @include estilo-tipograf($font-secundaria,1.1rem,400);
+    text-decoration: none;
+    animation-name: colores;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 0.2s;    
+    &:hover {
+        animation: none;
+        font-weight: 800;
+        color: map-get($colores,c-nav);
+        +.card-body__span{
+                display: block;
+                margin-left: 3%;
+        }         
+    }
+}
+.card-index1 {
+    display: flex;
+    align-items: center;
+    background-color: map-get($colores,c4);
+}
+.card-body__span {
+    @include estilo-tipograf($font-secundaria,0.8rem,600);
+    display: none;
+}
+.contenedorLogoPrincipal {
+    width: 70%;
+    margin: 3% auto;
+}
+.contenedorSoluciones {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+                li{
+                    list-style: none;
+                        img{
+                            width: 100%;
+                        }
+                }
+        }
+}

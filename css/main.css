@@ -1,0 +1,519 @@
+/* Importando fonts Roboto y Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 18px; }
+
+.img-logo {
+  width: 50%; }
+
+.navbar-collapse {
+  flex-grow: initial; }
+
+.nav-item a {
+  color: #e1eaf5;
+  font-size: 1.2rem; }
+  .nav-item a:hover {
+    color: orange;
+    transform: scale(1.05); }
+
+.active {
+  color: orange !important; }
+
+.Flex-sp-around, .foot, .foot_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.titleDecoration, .productos__main h1, .tutoriales__main h1, .ubicacion__main h1, .contacto__main h1 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600; }
+
+.separador {
+  margin: 2% auto;
+  width: 90vw;
+  height: 0.5vh;
+  animation: rotarcolor 3s infinite ease-in-out; }
+
+@keyframes rotarcolor {
+  from {
+    background-position: -100vw; }
+  to {
+    background-position: 0vw; } }
+
+.gradiente {
+  background: linear-gradient(to right, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%); }
+
+.foot {
+  width: 100%;
+  background-color: #869cc7; }
+  .foot div {
+    width: 100%; }
+    .foot div img {
+      width: 50%; }
+    .foot div span {
+      color: #343c46;
+      font-family: "Lato", sans-serif;
+      font-size: 1rem;
+      font-weight: 600; }
+
+.foot_nav {
+  width: 100%;
+  list-style: none; }
+  .foot_nav li {
+    padding: auto; }
+    .foot_nav li a {
+      text-decoration: none;
+      color: #e1eaf5;
+      font-size: 2rem;
+      padding: auto; }
+      .foot_nav li a:hover {
+        color: orange; }
+
+.foot_div ul {
+  display: flex;
+  justify-content: center;
+  list-style: none; }
+  .foot_div ul li {
+    margin: 3%; }
+    .foot_div ul li a {
+      color: #396eb0;
+      font-size: 2.5rem; }
+      .foot_div ul li a i:hover {
+        transform: rotate(5deg);
+        color: #60738b; }
+
+main {
+  width: 100%; }
+
+.main__div {
+  width: 100%;
+  min-height: 50vh;
+  background-color: #e1eaf5;
+  margin: 2% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.fotoportada1 {
+  width: 100%; }
+
+.Contenedor_cards {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-evenly; }
+
+.col h2 {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #396eb0; }
+
+.tituloPrincipal {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  font-style: oblique;
+  background: linear-gradient(90deg, #1b4449 0%, #6b75cf 47%, #45e468 94%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin: 3% auto; }
+
+.main__div__p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 3%; }
+
+.btn {
+  background-color: #60738b;
+  color: white; }
+
+.listadoCateg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2%;
+  margin-bottom: 3%; }
+  .listadoCateg p {
+    background-color: #343c46;
+    color: #e1eaf5;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 10px;
+    height: fit-content;
+    width: 100%;
+    padding-left: 5%; }
+    .listadoCateg p:hover {
+      background-color: #e1eaf5;
+      color: #343c46; }
+
+.offcanvas-title {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600; }
+
+.offcanvas-body {
+  background-color: #e1eaf5; }
+  .offcanvas-body p {
+    font-style: italic;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500; }
+
+.card-np {
+  width: 18rem;
+  margin: 3%; }
+  .card-np:hover {
+    box-shadow: 10px 10px 15px #60738b; }
+  .card-np img {
+    height: 30%; }
+
+.carousel {
+  width: 90%;
+  margin: auto; }
+
+.carousel-item img {
+  width: 100%; }
+
+.card-title {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #343c46;
+  text-decoration: underline; }
+
+@keyframes colores {
+  0% {
+    color: #7700ff; }
+  10% {
+    color: #a21afc;
+    transform: scale(1.01); }
+  20% {
+    color: #8850ad;
+    transform: scale(1.02); }
+  30% {
+    color: #81599b;
+    transform: scale(1.03); }
+  40% {
+    color: #c560e4;
+    transform: scale(1.04); }
+  50% {
+    color: #9c27ac;
+    transform: scale(1.05); }
+  60% {
+    color: #a8149c;
+    transform: scale(1.04); }
+  70% {
+    color: #962696;
+    transform: scale(1.03); }
+  80% {
+    color: #7f0e83;
+    transform: scale(1.02); }
+  90% {
+    color: #a71d89;
+    transform: scale(1.01); }
+  100% {
+    color: #6e3892;
+    transform: scale(1); } }
+
+.cardlink {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  animation-name: colores;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-delay: 0.2s; }
+  .cardlink:hover {
+    animation: none;
+    font-weight: 800;
+    color: orange; }
+    .cardlink:hover + .card-body__span {
+      display: block;
+      margin-left: 3%; }
+
+.card-index1 {
+  display: flex;
+  align-items: center;
+  background-color: #e1eaf5; }
+
+.card-body__span {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: none; }
+
+.contenedorLogoPrincipal {
+  width: 70%;
+  margin: 3% auto; }
+
+.contenedorSoluciones ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  .contenedorSoluciones ul li {
+    list-style: none; }
+    .contenedorSoluciones ul li img {
+      width: 100%; }
+
+.Flex-sp-around, .foot, .foot_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.titleDecoration, .productos__main h1, .tutoriales__main h1, .ubicacion__main h1, .contacto__main h1 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600; }
+
+.card-main {
+  position: relative; }
+  .card-main:hover .card-productos {
+    display: block; }
+
+.card-title {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 0.8rem; }
+
+.card-descripcion {
+  color: #e1eaf5;
+  padding-left: 0.3rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: left; }
+
+.card-productos {
+  position: absolute;
+  background-color: rgba(96, 115, 139, 0.88);
+  height: fit-content;
+  display: none; }
+
+.Flex-sp-around, .foot, .foot_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.titleDecoration, .productos__main h1, .tutoriales__main h1, .ubicacion__main h1, .contacto__main h1 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600; }
+
+.row {
+  margin: auto; }
+
+.video {
+  width: 100%;
+  height: 400px; }
+
+.Flex-sp-around, .foot, .foot_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.titleDecoration, .productos__main h1, .tutoriales__main h1, .ubicacion__main h1, .contacto__main h1 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600; }
+
+.ubicacion__main {
+  margin: 5% auto;
+  width: 85%; }
+  .ubicacion__main__section {
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .ubicacion__main__section iframe {
+      margin: 3%;
+      width: 600px;
+      height: 400px; }
+
+.card-ubicacion {
+  width: 18rem; }
+
+.card-body a {
+  color: #343c46;
+  text-decoration: none;
+  font-style: italic;
+  text-transform: uppercase; }
+
+.Flex-sp-around, .foot, .foot_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.titleDecoration, .productos__main h1, .tutoriales__main h1, .ubicacion__main h1, .contacto__main h1 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600; }
+
+.contacto__main__section {
+  display: flex;
+  justify-content: space-evenly; }
+  .contacto__main__section img {
+    width: 500px;
+    padding-left: 20px; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 30%;
+  border: solid 2px #60738b;
+  border-radius: 10px;
+  margin: 10% auto;
+  padding: 3%;
+  background-color: #e1eaf5; }
+  form p {
+    font-family: "Lato", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 1rem; }
+
+.form-label {
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400; }
+
+.botonera {
+  display: inline-block; }
+
+.btn2 {
+  width: 35%;
+  margin-top: 5%;
+  background-color: #396eb0;
+  color: white;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 700; }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px; }
+  .img-logo {
+    width: 35%; }
+  .listadoCateg p {
+    font-size: 0.8rem;
+    width: 90%; }
+  .foot div span {
+    font-size: 0.7rem; }
+  .foot_nav i {
+    font-size: 1.5rem; }
+  .ubicacion__main__section iframe {
+    width: 320px;
+    height: 213px; }
+  .contacto__main__section__img {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px; }
+  .columna2 {
+    display: none; }
+  .tituloPrincipal {
+    font-size: 3rem; }
+  .Contenedor_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .card1 {
+    margin-bottom: 3%; }
+  .ubicacion__main__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .card-ubicacion {
+    margin: 5% auto; }
+  .ubicacion__main__section iframe {
+    width: 300px;
+    height: 190px; }
+  form {
+    width: 50%; }
+  .card-descripcion {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 12px; }
+  .main__div {
+    min-height: 30vh; }
+  .main__div__p {
+    font-size: 1.5rem; }
+  .foot_logo {
+    display: flex;
+    flex-direction: column;
+    padding: auto; }
+  .video {
+    height: 300px; }
+  .img-thumbnail {
+    width: 100%; }
+  .card-descripcion {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 375px) {
+  .productos__main h1 {
+    font-size: 2rem; }
+  .foot_nav i {
+    font-size: 1rem; }
+  .foot_div i {
+    font-size: 1.8rem; } }
+
+@media screen and (max-width: 320px) {
+  .main__div {
+    min-height: 30vh; }
+  .main__div__p {
+    font-size: 1.2rem; }
+  .tituloPrincipal {
+    margin-top: 5%; }
+  .foot div span {
+    font-size: 0.6rem; }
+  .ubicacion__main h1 {
+    font-size: 2rem; }
+  .ubicacion__main__section iframe {
+    width: 200px;
+    height: 250px; }
+  .card-ubicacion {
+    width: 16rem; }
+  .contacto__main__section__img {
+    display: none; } }

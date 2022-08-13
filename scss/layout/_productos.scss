@@ -1,0 +1,31 @@
+@import "../utilities/mixins";
+@import "../utilities/extend";
+.productos__main{
+    h1{
+        @extend .titleDecoration;
+    }
+}
+.card-main{
+    position: relative;
+    &:hover .card-productos {
+        display: block;
+    }
+}
+.card-title {
+    @include estilo-tipograf($font-secundaria,1rem,600);
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0.8rem;
+}
+.card-descripcion {
+    color: map-get($colores,c4);
+    padding-left: 0.3rem;
+    @include estilo-tipograf($font-secundaria,1.1rem,500);
+    text-align: left;
+}
+.card-productos {
+    position: absolute;
+    background-color: map-get($colores,c7);
+    height: fit-content;
+    display: none;
+}
