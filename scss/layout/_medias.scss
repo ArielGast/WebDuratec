@@ -23,12 +23,6 @@
             font-size: 1.5rem;
         }
     }     
-    .ubicacion__main__section {
-        iframe {
-            width: 320px;
-            height: 213px;
-        }
-    }
     .contacto__main__section__img {
         display: none;
     }
@@ -51,20 +45,6 @@
     }
     .card1 {
         margin-bottom: 3%;
-    }
-    .ubicacion__main__section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .card-ubicacion {
-        margin: 5% auto;
-    }
-    .ubicacion__main__section {
-        iframe {
-            width: 300px;
-            height: 190px;
-        }
     }
     form {
         width: 50%;
@@ -133,20 +113,6 @@
                 font-size: 0.6rem;
             }
         } 
-    }
-    .ubicacion__main{
-        h1 {
-            font-size: 2rem;
-        }
-    }
-    .ubicacion__main__section { 
-        iframe {
-            width: 200px;
-            height: 250px;
-        }
-    }
-    .card-ubicacion {
-        width: 16rem;
     }
     .contacto__main__section__img {
         display: none;
