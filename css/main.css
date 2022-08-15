@@ -409,6 +409,9 @@ form {
     font-size: 0.8rem;
     font-weight: 400;
     margin-top: 1rem; }
+    form p span {
+      font-weight: 600;
+      font-size: 1rem; }
 
 .form-label {
   font-family: "Lato", sans-serif;
